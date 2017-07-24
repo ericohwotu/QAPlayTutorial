@@ -4,6 +4,9 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /redirect                   controllers.Application.redirect
+GET     /reverse                    controllers.Application.reverse
+GET     /impl                       controllers.Application.notImplemented
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
