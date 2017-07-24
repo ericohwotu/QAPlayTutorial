@@ -1,0 +1,42 @@
+body, html{
+    padding: 0px !important;
+    position: relative;
+}
+
+.header{
+    top:-30px;
+    left:-15px;
+    padding:0px;
+    position: relative;
+    width: 105%;
+    height: 150px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.header > p {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.error{
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.warning{
+    background-color: yellow;
+    color: rebeccapurple;
+}
+
+.notfoudn{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.good{
+    background-color: greenyellow;
+    color: black;
+}
+
+

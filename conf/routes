@@ -7,12 +7,17 @@ GET     /                           controllers.Application.index
 GET     /redirect                   controllers.Application.redirect
 GET     /reverse                    controllers.Application.reverse
 GET     /impl                       controllers.Application.notImplemented
+GET     /res                        controllers.Clients.resultHelpers(version: Option[String])
 
 # Clients page
 GET     /clients/list               controllers.Clients.list
 GET     /clients                    controllers.Clients.greet(name: String)
 GET     /clients/$id<[0-9]+>        controllers.Clients.show(id: Long)
 GET     /clients/$name<[A-Za-z]+>   controllers.Clients.showString(name: String)
+GET     /clients/version/           controllers.Clients.optionalHandling(version: Option[String])
+
+# Default page stuff
+GET     /about                      controllers.Default.redirect(to = "https://www.facebook.com")
 
 
 # Map static resources from the /public folder to the /assets URL path
