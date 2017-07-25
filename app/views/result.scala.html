@@ -1,4 +1,4 @@
-@(message: String)(cls: String, html: String = "")
+@(message: String, content: Html)(cls: String, html: String = "")
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,8 +13,8 @@
                 @getlinks(cls)
             </div>
         </div>
-        <div class="content-container">
-            @getcontent()
+        <div class="content-container @cls">
+            @content
             @Html(html)
         </div>
 

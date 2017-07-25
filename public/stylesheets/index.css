@@ -11,7 +11,9 @@ body, html{
     top: 160px;
     width: 100%;
     text-align: center;
+    background-color: transparent !important;
 }
+
 
 .column{
     position: relative;
@@ -62,7 +64,7 @@ body, html{
     border-bottom-style: solid;
 }
 
-::-webkit-scrollbar {
+.header-bottom::-webkit-scrollbar, .good::-webkit-scrollbar{
     width: 10px;
     height: 7px;
 }
@@ -115,6 +117,23 @@ body, html{
     color: white;
 }
 
+.content-container.good{
+    color: darkgreen;
+}
+
+.content-container.notfound{
+    color: rebeccapurple;
+}
+
+.content-container.error{
+    color: orangered;
+}
+
+.content-container.warning{
+    color: yellow;
+}
+
+
 a{
     border-style: solid;
     border-radius: 5px;
@@ -131,4 +150,8 @@ a, a:visited{
     text-decoration:  none;
 }
 
+input{
+    height: 30px;
+    border-radius: 5px;
+}
 
