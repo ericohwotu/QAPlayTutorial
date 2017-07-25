@@ -3,8 +3,8 @@ package helpers
 object ClientLayout {
 
   def getClientHome(cls: String): String ={
-    getButtonInputForm("name","/clients")(cls) +
-    getButtonInput(1,"id","/clients/")(cls) +
+    getButtonInputForm("name","/clients")(cls) + "<hr>" +
+    getButtonInput(1,"id","/clients/")(cls) + "<hr>" +
     getButtonInputForm("version","/clients/version/")(cls)
   }
 

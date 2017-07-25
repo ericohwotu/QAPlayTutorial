@@ -1,17 +1,26 @@
 body, html{
     padding: 0px !important;
-    position: relative;
+    position: absolute;
     border-width: 0px;
     width:100% !important;
+    top:0px;
+    height:100%;
     margin:0px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content-container{
     position: relative;
+    margin: 0 auto;
     top: 160px;
-    width: 100%;
+    width: 80%;
+    padding:15px;
     text-align: center;
-    background-color: transparent !important;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2) !important;
+    overflow: auto;
 }
 
 
@@ -49,7 +58,7 @@ body, html{
 .footer-top{
     position: relative;
     height: 50px;
-    background-color: lightgray;
+    background-color: rgba(133,133,133,0.6);
     display: block;
 }
 
@@ -67,25 +76,26 @@ body, html{
 .header-bottom::-webkit-scrollbar, .good::-webkit-scrollbar{
     width: 10px;
     height: 7px;
+    background-color: rgba(0,0,0,0) !important;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
 }
 
 .header-bottom{
     position: relative;
     min-height: 30px;
-    background-color: lightgray;
+    background-color: rgba(133,133,133,0.0);
     display: block;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     border-bottom-width: 4px;
     border-bottom-style: inset;
     overflow-x: auto;
@@ -98,7 +108,7 @@ body, html{
 }
 
 .error{
-    background-color: orangered;
+    background-color: rgba(133,0,0,0.6);
     color: whitesmoke;
 }
 
@@ -113,7 +123,7 @@ body, html{
 }
 
 .good{
-    background-color: darkgreen;
+    background-color: rgba(0,133,0,0.6);
     color: white;
 }
 
@@ -133,17 +143,16 @@ body, html{
     color: yellow;
 }
 
-
 a{
     border-style: solid;
     border-radius: 5px;
     border-width: thin;
     padding: 5px;
-    box-shadow: 0 3px  12px #333;
+    box-shadow: 0 3px  100px #333;
     font-weight: bold;
 }
 a:active{
-    box-shadow: 0 1px  5px #333;
+    /*box-shadow: 0 1px  5px #333;*/
 }
 
 a, a:visited{
