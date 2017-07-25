@@ -1,17 +1,93 @@
 body, html{
     padding: 0px !important;
     position: relative;
+    border-width: 0px;
+    width:100% !important;
+    margin:0px;
+}
+
+.content-container{
+    position: relative;
+    top: 160px;
+    width: 100%;
+    text-align: center;
+}
+
+.column{
+    position: relative;
+    display: block;
+    width: 48%;
+    text-align: justify;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.column-right{
+    float: right;
+}
+
+
+
+.column-left{
+    float: left;
+}
+
+.header-container{
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+.footer-container{
+    position: fixed;
+    width:100%;
+    bottom:0px;
+}
+
+.footer-top{
+    position: relative;
+    height: 50px;
+    background-color: lightgray;
+    display: block;
 }
 
 .header{
-    top:-30px;
-    left:-15px;
     padding:0px;
     position: relative;
-    width: 105%;
-    height: 150px;
+    width: 100%;
+    height: 100px;
     font-size: 28px;
     text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.header-bottom{
+    position: relative;
+    min-height: 30px;
+    background-color: lightgray;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom-width: 4px;
+    border-bottom-style: inset;
+    overflow-x: auto;
+    white-space:nowrap;
 }
 
 .header > p {
@@ -29,14 +105,30 @@ body, html{
     color: rebeccapurple;
 }
 
-.notfoudn{
+.notfound{
     background-color: rebeccapurple;
     color: white;
 }
 
 .good{
-    background-color: greenyellow;
-    color: black;
+    background-color: darkgreen;
+    color: white;
+}
+
+a{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    padding: 5px;
+    box-shadow: 0 3px  12px #333;
+    font-weight: bold;
+}
+a:active{
+    box-shadow: 0 1px  5px #333;
+}
+
+a, a:visited{
+    text-decoration:  none;
 }
 
 

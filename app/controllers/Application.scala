@@ -16,7 +16,7 @@ class Application extends Controller {
 
 
   def index: Action[AnyContent] = Action {
-    ok
+    Ok(views.html.result("Index")("good"))
   }
 
   def redirect: Action[AnyContent] = Action {

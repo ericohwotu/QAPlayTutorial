@@ -7,11 +7,11 @@ import play.api._
 class Clients extends Controller{
 
   val num = 448
-  val ok = Ok("Hello World")
+  val ok = Ok(views.html.result("Hello World")("good"))
   val notFound = NotFound
-  val pageNotFound = NotFound("<h1>Page Not Found</h1>").as("text/html")
+  val pageNotFound = NotFound(views.html.result("Page Not Found")("notfound"))
   val badRequest = BadRequest(views.html.result("There was an error")("error"))
-  val oops = InternalServerError("<h1>Oops</h1>").as("text/html")
+  val oops = InternalServerError(views.html.result("Oops Something Went Wrong")("error"))
   val anyStatus = Status(num)("strange response type")
 
   def list:Action[AnyContent]= Action {

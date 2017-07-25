@@ -1,12 +1,26 @@
-@(message: String)(cls: String)
+@(message: String)(cls: String, html: String = "")
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/index.css")">
-  <title>Title</title>
-</head>
-<body>
-  <div class="header @cls"><br><br><p>@message</p></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/index.css")">
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header @cls"><br><p>@message</p></div>
+            <div class="header-bottom">
+                @getlinks(cls)
+            </div>
+        </div>
+        <div class="content-container">
+            @getcontent()
+            @Html(html)
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-top"></div>
+        </div>
+
+    </body>
 </html>
